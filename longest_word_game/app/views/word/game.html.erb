@@ -1,0 +1,30 @@
+<h1>Welcome to the longest word-game !</h1>
+<p>Here is your grid :</p>
+<%= @grid %>
+
+<p>
+<form action="/score">
+  <label for="question">What is your best score?</label>
+  <input type="text" id="question" name="query" placeholder="Enter your longest word">
+  <input type="submit" value="Go!">
+  <input type="hidden" name="start_time" value=<%= @start_time %> >
+  <input type="hidden" name="grid" value=<%= @grid %> >
+</form>
+<p>
+
+<!-- puts "What's your best shot ?" -->
+<!-- start_time = Time.now
+attempt = gets.chomp
+end_time = Time.now
+
+puts "******** Now your result ********"
+
+result = run_game(attempt, grid, start_time, end_time)
+
+puts "Your word: #{attempt}"
+puts "Time Taken to answer: #{result[:time]}"
+puts "Translation: #{result[:translation]}"
+puts "Your score: #{result[:score]}"
+puts "Message: #{result[:message]}"
+
+puts "*****************************************************" -->
